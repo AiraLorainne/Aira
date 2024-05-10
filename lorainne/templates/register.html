@@ -1,6 +1,19 @@
 {% extends 'base.html' %}
+
 {% block content %}
 
-    <h1> THIS IS THE REGISTRATION PAGE </h1>
-    
-{% endblock %}
+<div class="card" style="width: 40rem; height: 45rem; align-items: left; padding: 3rem;margin: 2% auto; float: none;" >
+<div class="row">
+
+<h1>REGISTER TO LOG IN</h1>
+
+<form action="" method="post">
+   {% csrf_token %} 
+
+   {{ form.as_p }}
+   <button type="submit"  class="btn btn-dark">Register</button>
+</form>
+</div>
+</div>
+</div>
+{%endblock%}
